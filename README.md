@@ -1,1 +1,1 @@
-# Simple iframe broadcaster for our company. Feel free to use it yourself. There are buttons to change the iframe view.
+# A simple iframe broadcaster. Feel free to use it yourself. There are buttons to change the iframe view.
