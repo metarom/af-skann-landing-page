@@ -9,15 +9,33 @@
     <title>IFC.js</title>
 </head>
 <body>
+
+<!-- buttons to change the iframe URLs -->
+<input type="text" name="iframe1-url" id="iframe-url" value="Skann 1">
+<input type="button" id="iframe-button" value="Oppdater" onclick="changeIframeURL('iframe1')">
+
+<input type="text" name="iframe2-url" id="iframe-url2" value="Skann 2">
+<input type="button" id="iframe-button2" value="Oppdater" onclick="changeIframeURL('iframe2')">
+
+<script>
+function changeIframeURL(iframeID) {
+  var iframeURLInput = document.getElementsByName(iframeID + "-url")[0];  // get the input text field
+  var iframeURL = iframeURLInput.value;  // get the URL from the text field
+  var iframe = document.getElementById(iframeID);  // get the iframe with the specified ID
+  iframe.src = iframeURL;  // change the iframe URL
+}
+</script>
+
 <div class="file-opener">
     <button class="basic-button" onclick="window.location.href='index.html'"  id="file-opener-button">Bibliotek </button>
     <img src="AF.png" alt="AF Logo">
+
 </div>
 <div style="width: 100%; height: 100%;">
     <div style="width: 50%; height: 100%; float: left;"> 
-        <iframe width='100%' height='100%' src='https://my.matterport.com/show/?m=x6uw4HsGA74' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+        <iframe id="iframe1" width='100%' height='100%' src='https://my.matterport.com/show/?m=Ea4jRGgQzrQ' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
     </div>
     <div style="margin-left: 50%; height: 100%;"> 
-        <iframe class='right' width='100%' height='100%' src='https://my.matterport.com/show/?m=2nY7wUUVeHS' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+        <iframe id="iframe2" class='right' width='100%' height='100%' src='https://my.matterport.com/show/?m=XayF2svvp4k' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
     </div>
 </html>

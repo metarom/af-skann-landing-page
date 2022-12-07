@@ -32,6 +32,43 @@ html, body, iframe {
     right: 2rem;
 }
 
+#iframe-url {
+    position: absolute;
+    top: 6rem;
+    right: 5.58rem;
+    width: 5.5rem;
+    background-color: #444444;
+    color: #f7f7f7;
+    
+  }
+
+#iframe-button {
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    background-color: #444444;
+    color: #f7f7f7;
+
+  }
+
+  #iframe-url2 {
+    position: absolute;
+    top: 7.5rem;
+    right: 5.58rem;
+    width: 5.5rem;
+    background-color: #444444;
+    color: #f7f7f7;
+    
+  }
+
+#iframe-button2 {
+    position: absolute;
+    top: 7.5rem;
+    right: 2rem;
+    background-color: #444444;
+    color: #f7f7f7;
+
+  }
 
 .basic-button{
     background-color: #fecb00;
@@ -45,7 +82,7 @@ html, body, iframe {
 }
 
 .basic-button:hover{
-    background-color: black;
+    background-color: #444444;
     color: white;
 }
 

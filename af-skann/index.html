@@ -7,11 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>AFBF Skanning</title>
+
 </head>
 <body>
+<input type="text" id="iframe-url" value="lim inn lenke">
+<input type="button" id="iframe-button" value="Oppdater" onclick="changeIframeURL()">
 <div class="file-opener">
     <button class="basic-button" onclick="window.location.href='compare.html'"  id="file-opener-button">Bibliotek </button>
     <img src="AF.png" alt="AF Logo">
+<script>
+function changeIframeURL() {
+  var iframeURL = document.getElementById("iframe-url").value;
+  var iframe = document.querySelector("iframe");
+  iframe.src = iframeURL;
+}
+</script>
 </div>
-    <iframe width='100%' height='100%' src='https://my.matterport.com/show/?m=2nY7wUUVeHS' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
+    <iframe width='100%' height='100%' src='https://my.matterport.com/show/?m=Ea4jRGgQzrQ' frameborder='0' allowfullscreen allow='xr-spatial-tracking'></iframe>
 </html>
